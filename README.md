@@ -5,6 +5,11 @@ tool to speed up development<br>
 - [ ] compiles your project
 - [ ] pypi integration
 ### how to ..
+#### ... install
+```shell script
+pip3 install git+https://github.com/smthnspcl/pyproj
+```
+
 #### ... use by cli
 ```shell script
 usage: pyproj [-h] -n NEW [--no-mit] -a AUTHOR
@@ -15,6 +20,8 @@ optional arguments:
   --no-mit
   -a AUTHOR, --author AUTHOR
                         author name
+
+eg.: pyproj -n "test" -a "Pascal Eberlein"
 ```
 #### ... use by code
 ```python
