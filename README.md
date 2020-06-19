@@ -8,6 +8,8 @@ tool to speed up development<br>
 ### how to ..
 #### ... install
 ```shell script
+pip install pyproj-smthnspcl
+or
 pip3 install git+https://github.com/smthnspcl/pyproj
 ```
 
