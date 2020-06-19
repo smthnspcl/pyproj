@@ -1,9 +1,25 @@
-from os import makedirs, system
-from os.path import isdir
+from os import makedirs, system, getcwd
+from os.path import isdir, isfile
 from loguru import logger as log
 
 
 class Project(object):
+    @classmethod
+    def get_current_project_name(cls):
+        return getcwd().split("/")[-1]
+
+    @classmethod
+    def compile(cls):
+        if isfile("setup.py"):
+            log.debug("compiling '{0}'".format(cls.get_current_project_name()))
+            system("python3 setup.py bdist sdist")
+
+    @classmethod
+    def upload(cls):
+        if isdir("dist"):
+            log.debug("uploading '{0}' to pypi".format(cls.get_current_project_name()))
+            system("twine upload dist/*")
+
     @classmethod
     def touch(cls, fp):
         log.debug("creating file '{0}'".format(fp))

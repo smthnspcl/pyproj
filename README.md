@@ -1,9 +1,10 @@
 ## pyproj
 tool to speed up development<br>
 ### features?
-- [x] creates a project structure for you
-- [ ] compiles your project
-- [ ] pypi integration
+* [x] creates a project structure for you
+* [x] compiles your project
+* [x] pypi integration
+> implies you have already created your pypirc and installed twine
 ### how to ..
 #### ... install
 ```shell script
