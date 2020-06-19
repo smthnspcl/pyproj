@@ -4,7 +4,7 @@ tool to speed up development<br>
 * [x] creates a project structure for you
 * [x] compiles your project
 * [x] pypi integration
-> implies you have already created your pypirc and installed twine
+> implies you have already created your pypirc
 ### how to ..
 #### ... install
 ```shell script
